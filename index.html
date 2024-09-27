@@ -1,84 +1,189 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
-    <title>Tala's Resume</title>
-    <link rel = "stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- full-size monitor style sheet-->
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and
+    (min-width:960px)">
+    <!-- tablet style sheet-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and
+    (min-width:481px) and (max-width:960px)">
+    <!-- phone style sheet-->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and
+    (max-width:480px)">
 </head>
 
 <body>
-    <header id="header"> <!-- the whole page -->
-        <div class = "header container">
-            <div class = "inavBar">
-                <div class = "logo">
-                    <h1><span>T</span>.<span>B</span></h1> 
-                </div>
-                <nav class = "navList">
-                    <div class = "navLines">
-                        <div class="bar"></div>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#projects" class="navLink scrollto"><span>Projects</span></a>
-                        </li>
-                        <li>
-                            <a href="#about us" class="navLink scrollto"><span>About</span></a>
-                        </li>
-                        <li>
-                            <a href="#home" class="navLink scrollto"><span>Home</span></a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="navLink scrollto"><span>Contact</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <header id="header">
+        <nav>
+            <h1><span>T</span>.<span>B</span></h1>
+            <button class="navLines">
+                <span class="bar"></span>
+            </button>
+            <ul>
+                <li><a href="#projects" class="navLink scrollto">Projects</a></li>
+                <li><a href="#about" class="navLink scrollto">About</a></li>
+                <li><a href="#home" class="navLink scrollto">Home</a></li>
+                <li><a href="#contact" class="navLink scrollto">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-<!--End Header -->
+    <!-- End Header -->
 
-<!--Home Section-->
+    <!-- Home Section -->
     <section id="home">
-        <div class="home container">
-            <div>
-                <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1>Tala Bashanfar <span></span></h1>
-                <a href="#projects" class="btn">Projects</a>
-            </div>
-        </div>
+        <header>
+            <h1>Hello, <span></span></h1>
+            <h1>My name is <span>Tala Bashanfar</span></h1>
+            <p>Tech Strategist | IT Project Manager | Innovation Enthusiast</p>
+            <a href="#projects" class="btn">Projects</a>
+        </header>
     </section>
-<!--End Home Section-->
+    <!-- End Home Section -->
 
-<!--About Section-->
+    <!-- About Section -->
     <section id="about">
-        <div class="about container">
-            <div class="colLeft">
-                <div class="aboutImg">
-                    <img scr="./img/img-2.png" alt="img" />
-                </div>
-            </div>
-            <div class="colRight">
-                <h1 class="sectionTitle">About <span>me</span></h1>
-                <article>
-                    <h2>Networking Analyst</h2>
-                    <p>I will fill that out later</p>
-                </article>
-                <a href="./video.html" class="btn" target="_blank">Short Video</a>
-            </div>
-        </div>
-    </section>
-<!--End About Section-->
+        <header>
+            <h1>About <span>Me</span></h1>
+        </header>
+        <article>
+            <figure>
+                <img src="img/Untitled design.png" width="240" height="220" alt="My Picture">
+                <figcaption>Image of Me</figcaption>
+            </figure>
+            <section>
+                <h2>Tech Management</h2>
+                <p>Hi, I'm Tala Bashanfar, a Tech Strategist, IT Project Manager, and Innovation Enthusiast. Currently pursuing my degree in Technology Management at Ontario Tech University, I focus on leveraging technology to drive business growth and streamline operations. My passion lies in managing IT projects and leading digital transformations that foster innovation and efficiency. I thrive on finding creative solutions to complex challenges, always staying ahead of emerging tech trends. Explore my portfolio to see how I merge strategic thinking with a love for technology. Welcome to my portfolio!</p>
+                
+               <!-- Embedded Video -->
+                <h3>Short Video</h3>
+                <video width="320" height="240" controls autoplay muted loop id="myVideo">
+                    <source src="video/1727387135169585.mp4" type="video/mp4">
+                    <source src="video/1727387135169585.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>About Me Video</figcaption>
+                <br>
+                <button onclick="toggleMute()">Unmute/Resume Sound</button>
+                <script>
+                    const myVideo = document.getElementById('myVideo');
+                    
+                    function toggleMute() {
+                        if (myVideo.muted) {
+                            myVideo.muted = false; 
+                        } else {
+                            myVideo.muted = true;  
+                        }
+                    }
+                </script>
 
-<!--Projects Section-->
+            </section>
+        </article>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Projects Section -->
     <section id="projects">
-
+        <header>
+            <h1>Recent <span>Projects</span></h1>
+        </header>
+        <article>
+            <section>
+                <h1>Project 1</h1>
+                <h2>Will add the info later</h2>
+                <p>I will fill that out later</p>
+                <figure>
+                    <img src="./img/img-1.png" alt="Project 1 Image">
+                </figure>
+            </section>
+            <section>
+                <h1>Project 2</h1>
+                <h2>Will add the info later</h2>
+                <p>I will fill that out later</p>
+                <figure>
+                    <img src="./img/img-1.png" alt="Project 2 Image">
+                </figure>
+            </section>
+            <section>
+                <h1>Project 3</h1>
+                <h2>Will add the info later</h2>
+                <p>I will fill that out later</p>
+                <figure>
+                    <img src="./img/img-1.png" alt="Project 3 Image">
+                </figure>
+            </section>
+        </article>
     </section>
-    <section id="contacts">
+    <!-- End Projects Section -->
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <header>
+            <h1>Contact <span>Info</span></h1>
+        </header>
+        <article>
+            <form action="mailto:tala.bashanfar@ontariotechu.net?subject=Signup" method="post" class="phpEmailForm">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+            
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" placeholder="Subject" required>
+            
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="Your Message" required maxlength="500"></textarea>
+                <p><small>Maximum characters: 500</small></p>
+                
+                <button type="submit">Submit</button>
+                <p><input type="reset" value="Reset Form"/></p>
+            </form>            
+        </article>
     </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p><strong>Thank You For Visiting My Webpage</strong></p>
+        <address>
+            <p>You can reach me at:
+                <a href="mailto:tala.bashanfar@ontariotechu.net">tala.bashanfar@ontariotechu.net</a>
+            </p>
+        </address>
+        <p>&copy; 2024 TB. All rights reserved.</p>
+    </footer>
+    <!-- End Footer -->
+    
+    <script>
+        const navLines = document.querySelector(".navLines");
+        const menuItem = document.querySelectorAll("nav ul li a");
+        const head = document.querySelector("header");
+        const mobileMenu = document.querySelector("nav ul");
+
+        navLines.addEventListener("click", () => {
+            navLines.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+
+        document.addEventListener("scroll", () => {
+            var scrollPosition = window.scrollY;
+            if (scrollPosition < 250){
+                head.style.backgroundColor = "transparent"; 
+            } else {
+                head.style.backgroundColor = "#29323c";
+            }
+        });
+
+        menuItem.forEach((item) => {
+            item.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+                navLines.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
-
-</html>
 </html>
