@@ -19,14 +19,14 @@
 <body>
     <header id="header">
         <nav>
-            <h1><span>T</span>.<span>B</span></h1>
+            <h1><span>Tala</span>.</h1>
             <button class="navLines">
                 <span class="bar"></span>
             </button>
             <ul>
-                <li><a href="#projects" class="navLink scrollto">Projects</a></li>
-                <li><a href="#about" class="navLink scrollto">About</a></li>
                 <li><a href="#home" class="navLink scrollto">Home</a></li>
+                <li><a href="#about" class="navLink scrollto">About</a></li>
+                <li><a href="#projects" class="navLink scrollto">Projects</a></li>
                 <li><a href="#contact" class="navLink scrollto">Contact</a></li>
             </ul>
         </nav>
@@ -52,20 +52,18 @@
         <article>
             <figure>
                 <img src="img/Untitled design.png" width="240" height="220" alt="My Picture">
-                <figcaption>Image of Me</figcaption>
             </figure>
             <section>
                 <h2>Tech Management</h2>
                 <p>Hi, I'm Tala Bashanfar, a Tech Strategist, IT Project Manager, and Innovation Enthusiast. Currently pursuing my degree in Technology Management at Ontario Tech University, I focus on leveraging technology to drive business growth and streamline operations. My passion lies in managing IT projects and leading digital transformations that foster innovation and efficiency. I thrive on finding creative solutions to complex challenges, always staying ahead of emerging tech trends. Explore my portfolio to see how I merge strategic thinking with a love for technology. Welcome to my portfolio!</p>
                 
                <!-- Embedded Video -->
-                <h3>Short Video</h3>
+                <h3>Know Me Better!</h3>
                 <video width="320" height="240" controls autoplay muted loop id="myVideo">
                     <source src="video/1727387135169585.mp4" type="video/mp4">
                     <source src="video/1727387135169585.ogg" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
-                <figcaption>About Me Video</figcaption>
                 <br>
                 <button onclick="toggleMute()">Unmute/Resume Sound</button>
                 <script>
@@ -79,7 +77,6 @@
                         }
                     }
                 </script>
-
             </section>
         </article>
     </section>
@@ -92,11 +89,10 @@
         </header>
         <article>
             <section>
-                <h1>Project 1</h1>
-                <h2>Will add the info later</h2>
-                <p>I will fill that out later</p>
+                <h2>1. Cipher Encryption Game Using Multiple Algorithms</h2>
+                <p>This project is a cipher-based encryption game that allows users to encrypt messages using a variety of encryption algorithms, including Caesar, Substitution, Playfair, Transposition, Product, and RSA ciphers. I developed a graphical user interface (GUI) using Tkinter to enable users to interact with the game by selecting ciphers from a dropdown menu and entering messages to be encrypted. The program efficiently handles different encryption methods and displays both the original and encrypted messages in real-time, leveraging object-oriented programming principles to ensure modularity and ease of extension.</p>
                 <figure>
-                    <img src="./img/img-1.png" alt="Project 1 Image">
+                    <img src="img/project 1 pic.png" alt="Project 1 Image">
                 </figure>
             </section>
             <section>
@@ -120,30 +116,32 @@
     <!-- End Projects Section -->
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact">
         <header>
             <h1>Contact <span>Info</span></h1>
         </header>
         <article>
-            <form action="mailto:tala.bashanfar@ontariotechu.net?subject=Signup" method="post" class="phpEmailForm">
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Your Name" required>
+            <form action="mailto:tala.bashanfar@ontariotechu.net?subject=Signup" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
                 
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
             
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" placeholder="Subject" required>
+                <label for="subject">Subject</label><br>
+                <input type="text" name="subject" placeholder="Subject" required><br><br>
             
-                <label for="message">Message</label>
-                <textarea name="message" placeholder="Your Message" required maxlength="500"></textarea>
+                <label for="message">Message</label><br>
+                <textarea name="message" placeholder="Your Message" required maxlength="500"></textarea><br>
                 <p><small>Maximum characters: 500</small></p>
                 
                 <button type="submit">Submit</button>
-                <p><input type="reset" value="Reset Form"/></p>
+                <input type="reset" value="Reset Form">
             </form>            
         </article>
     </section>
+
     <!-- End Contact Section -->
 
     <!-- Footer -->
