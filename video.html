@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Me Better</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-top: 50px;
+            color: #000000;
+            letter-spacing: 0.1rem;
+        }
+
+        #myVideo {
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border-color: rgb(142,199,183);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 0;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgb(142,199,183);
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <!-- Embedded Video -->
+    <h3>Know Me Better!</h3>
+    <video width="640" height="360" controls autoplay muted loop id="myVideo">
+        <source src="video/1727387135169585.mp4" type="video/mp4">
+        <source src="video/1727387135169585.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <button onclick="toggleMute()">Unmute/Resume Sound</button>
+
+    <script>
+        const myVideo = document.getElementById('myVideo');
+        
+        function toggleMute() {
+            if (myVideo.muted) {
+                myVideo.muted = false; 
+            } else {
+                myVideo.muted = true;  
+            }
+        }
+    </script>
+
+</body>
+</html>

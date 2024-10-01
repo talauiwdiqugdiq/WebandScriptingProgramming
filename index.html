@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
@@ -14,173 +13,151 @@
     <!-- phone style sheet-->
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and
     (max-width:480px)">
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Header -->
     <header id="header">
-        <nav>
-            <h1><span>Tala</span>.</h1>
-            <button class="navLines">
-                <span class="bar"></span>
-            </button>
-            <ul>
-                <li><a href="#home" class="navLink scrollto">Home</a></li>
-                <li><a href="#about" class="navLink scrollto">About</a></li>
-                <li><a href="#projects" class="navLink scrollto">Projects</a></li>
-                <li><a href="#contact" class="navLink scrollto">Contact</a></li>
-            </ul>
+      <section class="header container">
+        <nav class="navBar">
+          <h1 class="logo"><span>Tala</span>.</h1>
+          <ul class="navList">
+            <li>
+              <a href="#home" class="navLink scrollto active"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#about" class="navLink scrollto"><span>About</span></a>
+            </li>
+            <li>
+              <a href="#projects" class="navLink scrollto"><span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#contact" class="navLink scrollto"><span>Contact</span></a>
+            </li>
+          </ul>
         </nav>
+      </section>
     </header>
     <!-- End Header -->
 
-    <!-- Home Section -->
-    <section id="home">
-        <header>
-            <h1>Hello, <span></span></h1>
-            <h1>My name is <span>Tala Bashanfar</span></h1>
-            <p>Tech Strategist | IT Project Manager | Innovation Enthusiast</p>
-            <a href="#projects" class="btn">Projects</a>
-        </header>
-    </section>
-    <!-- End Home Section -->
+    <!-- Home Section  -->
+    <main id="home">
+      <section class="home container">
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Tala Bashanfar <span></span></h1>
+        <a href="#projects" class="btn">Projects</a>
+      </section>
+    </main>
+    <!-- End Home Section  -->
 
     <!-- About Section -->
     <section id="about">
-        <header>
-            <h1>About <span>Me</span></h1>
-        </header>
-        <article>
-            <figure>
-                <img src="img/Untitled design.png" width="240" height="220" alt="My Picture">
-            </figure>
-            <section>
-                <h2>Tech Management</h2>
-                <p>Hi, I'm Tala Bashanfar, a Tech Strategist, IT Project Manager, and Innovation Enthusiast. Currently pursuing my degree in Technology Management at Ontario Tech University, I focus on leveraging technology to drive business growth and streamline operations. My passion lies in managing IT projects and leading digital transformations that foster innovation and efficiency. I thrive on finding creative solutions to complex challenges, always staying ahead of emerging tech trends. Explore my portfolio to see how I merge strategic thinking with a love for technology. Welcome to my portfolio!</p>
-                
-               <!-- Embedded Video -->
-                <h3>Know Me Better!</h3>
-                <video width="320" height="240" controls autoplay muted loop id="myVideo">
-                    <source src="video/1727387135169585.mp4" type="video/mp4">
-                    <source src="video/1727387135169585.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                <br>
-                <button onclick="toggleMute()">Unmute/Resume Sound</button>
-                <script>
-                    const myVideo = document.getElementById('myVideo');
-                    
-                    function toggleMute() {
-                        if (myVideo.muted) {
-                            myVideo.muted = false; 
-                        } else {
-                            myVideo.muted = true;  
-                        }
-                    }
-                </script>
-            </section>
-        </article>
+      <article class="about container">
+        <a href="./video.html" class="btn" target="_blank">Short Video</a>
+        <p>Hi, I'm Tala Bashanfar, a Tech Strategist, IT Project Manager, and Innovation Enthusiast. Currently pursuing my degree in Technology Management at Ontario Tech University, I focus on leveraging technology to drive business growth and streamline operations. My passion lies in managing IT projects and leading digital transformations that foster innovation and efficiency. I thrive on finding creative solutions to complex challenges, always staying ahead of emerging tech trends. Explore my portfolio to see how I merge strategic thinking with a love for technology. Welcome to my portfolio!</p>
+        <h2>Tech Management</h2>
+        <figure class="aboutImg"></figure>
+          <img src="img/Untitled design.png" width="240" height="220" alt="My Picture">
+        </figure>
+        <h1 class="sectionTitle">About <span>me</span></h1>
+      </article>
     </section>
     <!-- End About Section -->
 
     <!-- Projects Section -->
     <section id="projects">
-        <header>
-            <h1>Recent <span>Projects</span></h1>
-        </header>
-        <article>
-            <section>
-                <h2>1. Cipher Encryption Game Using Multiple Algorithms</h2>
-                <p>This project is a cipher-based encryption game that allows users to encrypt messages using a variety of encryption algorithms, including Caesar, Substitution, Playfair, Transposition, Product, and RSA ciphers. I developed a graphical user interface (GUI) using Tkinter to enable users to interact with the game by selecting ciphers from a dropdown menu and entering messages to be encrypted. The program efficiently handles different encryption methods and displays both the original and encrypted messages in real-time, leveraging object-oriented programming principles to ensure modularity and ease of extension.</p>
-                <a href="https://github.com/talauiwdiqugdiq/WebandScriptingProgramming" target="_blank">View Project 1 on GitHub</a>
-                <figure>
-                        <img src="img/project 1 pic.png" alt="Project 1 Image">
-                </figure>
-            </section>
-            <section>
-                <h2>2. Implementation of a Queue Class in Python</h2>
-                <p>In this project, I created a Queue class that implements fundamental queue operations such as enqueue, dequeue, and checking if the queue is empty. I used a list to manage the data, enabling elements to be added to the back and removed from the front, following the First-In-First-Out (FIFO) principle. My implementation includes methods for retrieving the front element, checking if the queue is empty, and providing a string representation of the queue's current state. I also included test cases that demonstrate the functionality of the queue by enqueuing and dequeuing various integers while displaying the queue's state at each step.</p>
-                <figure>
-                    <img src="img/project 2 pic.png" alt="Project 2 Image">
-                </figure>
-            </section>
-            <section>
-                <h2>3. Calculation of Total Costs in a Purchase Program</h2>
-                <p>In this project, I developed a simple program that calculates the total costs of items purchased. I defined the cost per item and the quantity, and then calculated the subtotal, tax, and total cost. The tax rate is set at 13%, and the program computes these values step by step. I also included formatted print statements to display the cost per item, quantity, subtotal, tax, and total cost with two decimal places for better readability. This program effectively demonstrates basic arithmetic operations and formatting in Python.</p>
-                <figure>
-                    <img src="img/project 3 pic.png" alt="Project 3 Image">
-                </figure>
-            </section>
-        </article>
+      <article class="projects container">
+        <h1 class="sectionTitle">Recent <span>Projects</span></h1>
+        <ul class="allProjects">
+          <li class="projectItem">
+            <h2>1. Cipher Encryption Game Using Multiple Algorithms</h2>
+            <p>This project is a cipher-based encryption game that allows users to encrypt messages using a variety of encryption algorithms, including Caesar, Substitution, Playfair, Transposition, Product, and RSA ciphers. I developed a graphical user interface (GUI) using Tkinter to enable users to interact with the game by selecting ciphers from a dropdown menu and entering messages to be encrypted. The program efficiently handles different encryption methods and displays both the original and encrypted messages in real-time, leveraging object-oriented programming principles to ensure modularity and ease of extension.            <a href="https://github.com/talauiwdiqugdiq/WebandScriptingProgramming/blob/main/project1.py" target="_blank">View Project 1 on GitHub</a>
+            </p>
+            <aside>
+              <figure class="projectImg">
+                <img src="img/project 1 pic.png" width="240" height="220" alt="Project 1 Image">
+              </figure>
+            </aside>
+          </li>
+          <li class="projectItem">
+            <h2>2. Implementation of a Queue Class in Python</h2>
+            <p>In this project, I created a Queue class that implements fundamental queue operations such as enqueue, dequeue, and checking if the queue is empty. I used a list to manage the data, enabling elements to be added to the back and removed from the front, following the First-In-First-Out (FIFO) principle. My implementation includes methods for retrieving the front element, checking if the queue is empty, and providing a string representation of the queue's current state. I also included test cases that demonstrate the functionality of the queue by enqueuing and dequeuing various integers while displaying the queue's state at each step.</p>
+            <aside>
+              <figure class="projectImg">
+                <img src="img/project 2 pic.png"  alt="Project 2 Image">
+              </figure>
+            </aside>
+          </li>
+          <li class="projectItem">
+            <h2>3. Calculation of Total Costs in a Purchase Program</h2>
+            <p>In this project, I developed a simple program that calculates the total costs of items purchased. I defined the cost per item and the quantity, and then calculated the subtotal, tax, and total cost. The tax rate is set at 13%, and the program computes these values step by step. I also included formatted print statements to display the cost per item, quantity, subtotal, tax, and total cost with two decimal places for better readability. This program effectively demonstrates basic arithmetic operations and formatting in Python.</p>
+            <aside>
+              <figure class="projectImg">
+                <img src="img/project 3 pic.png" alt="Project 3 Image">
+              </figure>
+            </aside>
+          </li>
+        </ul>
+      </article>
     </section>
     <!-- End Projects Section -->
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
     <section id="contact">
-        <header>
-            <h1>Contact <span>Info</span></h1>
-        </header>
-        <article>
-            <form action="mailto:tala.bashanfar@ontariotechu.net?subject=Signup" method="post">
-                <label for="name">Name</label><br>
-                <input type="text" name="name" placeholder="Your Name" required><br><br>
-                
-                <label for="email">Email</label><br>
-                <input type="email" name="email" placeholder="Your Email" required><br><br>
-            
-                <label for="subject">Subject</label><br>
-                <input type="text" name="subject" placeholder="Subject" required><br><br>
-            
-                <label for="message">Message</label><br>
-                <textarea name="message" placeholder="Your Message" required maxlength="500"></textarea><br>
-                <p><small>Maximum characters: 500</small></p>
-                
-                <button type="submit">Submit</button>
-                <input type="reset" value="Reset Form">
-            </form>            
-        </article>
+      <article class="contact container">
+        <h1 class="sectionTitle">Contact <span>info</span></h1>
+        <form action="#" method="post" class="phpEmailForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" style="height: 150px" placeholder="Your Message" required></textarea>
+          <p><small>Maximum characters: 500</small></p>
+          <button class="button" type="submit">Submit</button>
+          <input type="reset" value="Reset Form">
+        </form>
+        
+      </article>
     </section>
-
     <!-- End Contact Section -->
 
     <!-- Footer -->
     <footer id="footer">
-        <p><strong>Thank You For Visiting My Webpage</strong></p>
-        <address>
-            <p>You can reach me at:
-                <a href="mailto:tala.bashanfar@ontariotechu.net">tala.bashanfar@ontariotechu.net</a>
-            </p>
-        </address>
-        <p>&copy; 2024 TB. All rights reserved.</p>
+      <section class="footer container">
+        <h1><span>Thank You For visiting my webpage</span></h1>
+        <p>You can reach me at ↓</p>
+        <h2>tala.bashanfar@ontariotechu.net</h2>
+        <p>Copyright © 2024 TB. All Rights Reserved</p>
+      </section>
     </footer>
     <!-- End Footer -->
-    
+
     <script>
-        const navLines = document.querySelector(".navLines");
-        const menuItem = document.querySelectorAll("nav ul li a");
-        const head = document.querySelector("header");
-        const mobileMenu = document.querySelector("nav ul");
+      const navLines = document.querySelector(".header .navBar .navList .navLines");
+      const menuItem = document.querySelectorAll(".header .navBar .navList ul li a");
+      const head = document.querySelector(".header.container");
+      const mobileMenu = document.querySelector(".header .navBar .navList ul");
 
-        navLines.addEventListener("click", () => {
-            navLines.classList.toggle("active");
-            mobileMenu.classList.toggle("active");
-        });
+      navLines.addEventListener("click", () => {
+        navLines.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
 
-        document.addEventListener("scroll", () => {
-            var scrollPosition = window.scrollY;
-            if (scrollPosition < 250){
-                head.style.backgroundColor = "transparent"; 
-            } else {
-                head.style.backgroundColor = "#29323c";
-            }
-        });
+      document.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        head.style.backgroundColor = scrollPosition < 250 ? "transparent" : "#29323c";
+      });
 
-        menuItem.forEach((item) => {
-            item.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-                navLines.classList.toggle("active");
-            });
+      menuItem.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.toggle("active");
+          navLines.classList.toggle("active");
         });
+      });
     </script>
-</body>
+  </body>
 </html>
