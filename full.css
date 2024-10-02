@@ -1,4 +1,18 @@
 
+/* Full-size monitor (desktop) */
+@media only screen and (min-width: 960px) {
+  /* Your full-size styles */
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  /* Your tablet styles */
+}
+
+/* Phone */
+@media only screen and (max-width: 480px) {
+}
+
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
   box-sizing: border-box;
@@ -16,6 +30,7 @@ html {
   align-items: center;
   justify-content: center;
   display: flex;
+  overflow-x: hidden;
 
 }
 #about .container {
@@ -36,6 +51,7 @@ img {
   width: 100%;
   
 }
+
 p {
   color: black;
   font-size: 1.4rem;
@@ -372,9 +388,10 @@ p {
 /* Projects section */
 #projects .projects {
   flex-direction: column;
-  max-width: 1200px;
+  width: 100vw;
   margin: 0 auto;
   padding: 100px 0;
+  overflow-x: hidden;
 }
 #projects .projectsHeader h1 {
   margin-bottom: 50px;
@@ -384,13 +401,13 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 #projects .projectItem {
   display: flex;
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;

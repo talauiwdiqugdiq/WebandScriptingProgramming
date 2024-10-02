@@ -1,0 +1,326 @@
+:root {
+    --primary-color: rgb(142, 199, 183); /* Define the primary color */
+}
+
+/* Rest of your styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: rgb(128, 128, 128);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.primary-color {
+    color: var(--primary-color); /* Use the variable for the primary color */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 5vh;
+    color: var(--primary-color);
+}
+
+.name {
+    font-weight: normal;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav-button a {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.2s ease-in;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.nav-button a:hover {
+    background-color: var(--primary-color); /* This now works */
+}
+
+main {
+    padding-top: 10vh;
+    min-height: 100vh; /* Ensure main takes up the entire viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column; /* Stack spans vertically */
+    align-items: flex-start; /* Align items to the left */
+    background-color: rgb(68, 68, 68);
+    font-size: 4vw;
+    font-weight: bold;
+    height: 100%;
+    padding: 12vh;
+}
+
+.main-div a {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2vw;
+    font-weight: normal;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+}
+
+.main-div a:hover {
+    background-color: var(--primary-color);
+}
+
+.primary {
+    color: var(--primary-color); /* Apply primary color */
+}
+
+.text-white {
+    color: white;
+}
+
+section {
+    padding: 50px;
+    background-color: #fff;
+    font-size: 2vw;
+    text-align: center;
+}
+.me {
+    color: var(--primary-color);
+}
+
+.section-one {
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-one img {
+    width: 30%; /* Image will be 30% of the container's width */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+    border-radius: 20px; /* Optional: keeps rounded corners */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.regular-font {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.section-one p {
+    font-size: 1.2vw;
+}
+
+.section-two-span {
+    width: 100%;
+    text-align: start;
+}
+
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+  }
+#contact .contactItems {
+    /* max-width: 400px; */
+    width: 100%;
+  }
+#contact .contactItem {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+  }
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+#contact .contactItems .contactItem .contactInfo .phpEmailForm input[type="email"] {
+    height: 44px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+#contact .contactItems .contactItem .contactInfo .phpEmailForm .button{
+    display: inline-block;
+    padding: 5px 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(142,199,183);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 5px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+  }
+  
+  
+#contact .contactItems .contactItem .contactInfo .phpEmailForm .button {
+      color: white;
+      background-color: rgb(142,199,183);
+    
+  }
+  /*End contact Section */
+  
+  /* Footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  }
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+#footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 600px; /* This limits the form's width on large screens */
+    margin: 0 auto; /* Center the form */
+  }
+  
+form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left; /* Ensure labels align left */
+  }
+  
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+form button {
+    padding: 10px 20px;
+    background-color: #29323c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    position: left;
+  
+  }
+  
+form input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+form p {
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    width: 100%;
+  }
+  
+ /* Footer */
+#footer {
+    background-color: rgb(142,199,183);
+  }
+  #footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color:  rgb(142,199,183);
+  }
+  #footer h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #footer p {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+  }
