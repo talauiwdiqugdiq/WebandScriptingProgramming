@@ -1,8 +1,7 @@
 :root {
-    --primary-color: rgb(142, 199, 183); /* Define the primary color */
+    --primary-color: rgb(142, 199, 183); 
 }
 
-/* Rest of your styles */
 html,
 body {
     margin: 0;
@@ -29,18 +28,20 @@ body {
 
 .navbar {
     background-color: rgb(128, 128, 128);
-    width: 100vw;
+    width: 100%; 
     height: 10vh;
     display: flex;
     align-items: center;
     padding-left: 2vw;
     padding-right: 2vw;
     justify-content: space-between;
-    position: absolute;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 .primary-color {
-    color: var(--primary-color); /* Use the variable for the primary color */
+    color: var(--primary-color); 
 }
 
 .logo {
@@ -72,20 +73,20 @@ body {
 }
 
 .nav-button a:hover {
-    background-color: var(--primary-color); /* This now works */
+    background-color: var(--primary-color); 
 }
 
 main {
     padding-top: 10vh;
-    min-height: 100vh; /* Ensure main takes up the entire viewport */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
 
 .main-div {
     display: flex;
-    flex-direction: column; /* Stack spans vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
     background-color: rgb(68, 68, 68);
     font-size: 4vw;
     font-weight: bold;
@@ -111,7 +112,7 @@ main {
 }
 
 .primary {
-    color: var(--primary-color); /* Apply primary color */
+    color: var(--primary-color); 
 }
 
 .text-white {
@@ -136,9 +137,9 @@ section {
 }
 
 .section-one img {
-    width: 30%; /* Image will be 30% of the container's width */
-    height: auto; /* Height adjusts automatically to maintain aspect ratio */
-    border-radius: 20px; /* Optional: keeps rounded corners */
+    width: 30%; 
+    height: auto; 
+    border-radius: 20px; 
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
@@ -162,11 +163,10 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-  }
+}
 #contact .contactItems {
-    /* max-width: 400px; */
     width: 100%;
-  }
+}
 #contact .contactItem {
     width: 80%;
     padding: 20px;
@@ -180,14 +180,14 @@ section {
     flex-direction: column;
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: 0.3s ease box-shadow;
-  }
+}
 #contact .icon {
     width: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
-  }
-  input[type="text"],
-  textarea {
+}
+input[type='text'],
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -196,44 +196,45 @@ section {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-#contact .contactItems .contactItem .contactInfo .phpEmailForm input[type="email"] {
+}
+#contact
+    .contactItems
+    .contactItem
+    .contactInfo
+    .phpEmailForm
+    input[type='email'] {
     height: 44px;
     width: 100%;
     margin-bottom: 12px;
-  }
-#contact .contactItems .contactItem .contactInfo .phpEmailForm .button{
+}
+#contact .contactItems .contactItem .contactInfo .phpEmailForm .button {
     display: inline-block;
     padding: 5px 5px;
     color: white;
     background-color: transparent;
-    border: 2px solid rgb(142,199,183);
+    border: 2px solid rgb(142, 199, 183);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 5px;
     transition: 0.3s ease;
     transition-property: background-color, color;
-  }
-  
-  
+}
+
 #contact .contactItems .contactItem .contactInfo .phpEmailForm .button {
-      color: white;
-      background-color: rgb(142,199,183);
-    
-  }
-  /*End contact Section */
-  
-  /* Footer */
+    color: white;
+    background-color: rgb(142, 199, 183);
+}
+
 #footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  }
+}
 #footer .footer {
     min-height: 200px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
-  }
+}
 #footer h2 {
     color: white;
     font-weight: 500;
@@ -241,37 +242,38 @@ section {
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 #footer p {
     color: white;
     font-size: 1.3rem;
-  }
+}
 
 form {
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 100%;
-    max-width: 600px; /* This limits the form's width on large screens */
-    margin: 0 auto; /* Center the form */
-  }
-  
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
 form label {
     display: block;
     width: 100%;
     margin-bottom: 5px;
-    text-align: left; /* Ensure labels align left */
-  }
-  
-form input, form textarea {
+    text-align: left; 
+}
+
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
+}
+
 form button {
     padding: 10px 20px;
     background-color: #29323c;
@@ -281,10 +283,9 @@ form button {
     cursor: pointer;
     margin: 10px;
     position: left;
-  
-  }
-  
-form input[type="reset"] {
+}
+
+form input[type='reset'] {
     padding: 10px 20px;
     background-color: #ccc;
     color: black;
@@ -292,35 +293,63 @@ form input[type="reset"] {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
-  }
-  
+}
+
 form p {
     font-size: 12px;
     color: #888;
     text-align: left;
     width: 100%;
-  }
-  
- /* Footer */
+}
+
 #footer {
-    background-color: rgb(142,199,183);
-  }
-  #footer .footer {
+    background-color: rgb(142, 199, 183);
+}
+#footer .footer {
     min-height: 200px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
-    background-color:  rgb(142,199,183);
-  }
-  #footer h2 {
+    background-color: rgb(142, 199, 183);
+}
+#footer h2 {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  #footer p {
+}
+#footer p {
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
-  }
+}
+
+.section-one a {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    font-weight: normal;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+}
+
+.section-one a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+.custom-anchor {
+    font-size: 1vw !important;
+    width: 100%;
+}
+.custom-span-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 5vw;
+}

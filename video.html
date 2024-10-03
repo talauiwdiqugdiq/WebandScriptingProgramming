@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Me Better</title>
     <style>
-        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -15,7 +14,7 @@
         }
 
         h3 {
-            font-size: 2rem;
+            font-size: 4vw;
             margin-top: 50px;
             color: #000000;
             letter-spacing: 0.1rem;
@@ -25,20 +24,24 @@
             border: 5px solid white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            width: 50%;
+            height: 50%;
+
         }
 
         button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            font-size: 1.2rem;
+            font-size: 1.5vw;
+            border-radius: 10px;
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             border-color: rgb(142,199,183);
-            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            border-radius: 0;
+            width: 20%;
+
         }
 
         button:hover {
@@ -51,9 +54,8 @@
 </head>
 <body>
 
-    <!-- Embedded Video -->
     <h3>Know Me Better!</h3>
-    <video width="640" height="360" controls autoplay muted loop id="myVideo">
+    <video  controls autoplay muted loop id="myVideo">
         <source src="video/1727387135169585.mp4" type="video/mp4">
         <source src="video/1727387135169585.ogv" type="video/ogg">
         Your browser does not support the video tag.
