@@ -251,7 +251,7 @@ textarea {
 form {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     width: 100%;
     max-width: 600px; 
     margin: 0 auto; 
@@ -282,7 +282,8 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
-    position: left;
+    position: relative;
+    left: 0
 }
 
 form input[type='reset'] {
@@ -293,6 +294,8 @@ form input[type='reset'] {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    position: relative;
+    left: 0
 }
 
 form p {
@@ -310,10 +313,10 @@ form p {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
-    background-color: rgb(142, 199, 183);
+    background-image: linear-gradient(to bottom, rgb(142, 199, 183), white);
 }
 #footer h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
@@ -321,7 +324,7 @@ form p {
     margin-bottom: 10px;
 }
 #footer p {
-    color: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
     font-size: 1.3rem;
 }
 
