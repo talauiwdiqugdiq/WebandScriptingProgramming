@@ -9,36 +9,36 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            padding: 0;/*ensuring the content fills the entire viewport.*/
+            text-align: center;/*Centers the text horizontally*/
         }
 
         h3 {
-            font-size: 4vw;
-            margin-top: 50px;
+            font-size: 4vw; /*the font size is dynamic and set to 4vw (4% of the viewport width)*/
+            margin-top: 50px; /*adds a top margin of 50px to create space between the top of the page and the heading*/
             color: #000000;
-            letter-spacing: 0.1rem;
+            letter-spacing: 0.1rem; /*to spread out the letters slightly for a more readable, spaced-out look*/
         }
 
         #myVideo {
-            border: 5px solid white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            width: 50%;
+            border: 5px solid white; /*a border is added around the video to create a clean visual separation from the background*/
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*applied to make the video stand out with a soft 3D effect*/
+            margin-top: 20px;/*pushes the video slightly down from the heading*/
+            width: 50%;/*both width and height are set to 50% of the parent element, ensuring responsiveness to screen size*/
             height: 50%;
 
         }
 
         button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            display: inline-block; /*to keep the button in line with the content*/
+            margin-top: 20px; /*to create spacing between the video and the button*/
+            padding: 10px 20px; /*ensures that the button has enough internal space around the text*/
             font-size: 1.5vw;
-            border-radius: 10px;
+            border-radius: 10px; /*rounded border with a 10px radius softens the button’s corners*/
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             border-color: rgb(142,199,183);
-            cursor: pointer;
+            cursor: pointer;/*give feedback when the button is hovered*/
             transition: background-color 0.3s ease;
             width: 20%;
 

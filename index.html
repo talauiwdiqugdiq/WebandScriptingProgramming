@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Personal Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css" type="text/css">
+      
     </head>
     <body>
         <header>
@@ -27,8 +28,8 @@
                 <a href="#projects">PROJECTS</a>
             </div>
         </main>
-        <section id="about" class="section-one">
-            <span>ABOUT <span class="me">ME</span></span>
+        <section id="about" class="section-one"> <!--section one is the class for the first part of the word in white-->
+            <span>ABOUT <span class="me">ME</span></span> <!--class me is the green part of the title-->
             <img src="img/Untitled-design.png" alt="My Picture" />
             <span class="regular-font">Tech Management</span>
             <p>
@@ -45,7 +46,7 @@
             </p>
             <a href="./video.html" class="btn" target="_blank">Short Video</a>
         </section>
-        <section id="projects" class="section-one">
+        <section id="projects" class="section-one"> 
             <span>CURRENT <span class="me">PROJECTS</span></span>
             <span class="regular-font section-two-span"
                 >1. Cipher Encryption Game Using Multiple Algorithms</span
@@ -106,8 +107,7 @@
         <section id="contact">
             <article class="contact container">
                 <div class="custom-span-div">
-                    <span class="section-one">CONTACT </span>
-                    <span class="me">INFO</span>
+                    <a class="section-one"><span>CONTACT</span><span class="me">INFO</span></a>
                 </div>
                 <form action="#" method="post" class="phpEmailForm">
                     <label for="name">Name</label>

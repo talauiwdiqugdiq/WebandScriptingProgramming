@@ -1,13 +1,13 @@
-:root {
-    --primary-color: rgb(142, 199, 183); 
+:root { /*allows defining variables globally, making them accessible across the entire document*/
+    --primary-color: rgb(142, 199, 183); /*creates a custom property --primary-color that you can reuse anywhere in your CSS to apply this specific color just by using var(--primary-color) whenever you want to apply this color*/
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    height: 100%;
+    box-sizing: border-box; /*to make padding and borders included in an element’s total width and height*/
+    height: 100%; /*ensures the body takes the full height of the page*/
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -15,9 +15,9 @@ body {
 }
 
 *,
-*::before,
+*::before, 
 *::after {
-    box-sizing: inherit;
+    box-sizing: inherit; /*Applies the box-sizing: border-box rule to all elements and their pseudo-elements (before and after), ensuring consistent sizing*/
 }
 
 body {
@@ -28,70 +28,70 @@ body {
 
 .navbar {
     background-color: rgb(128, 128, 128);
-    width: 100%; 
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    justify-content: space-between;
-    position: fixed; 
-    top: 0; 
-    z-index: 1000; 
+    width: 100%; /*width is always taking the 100% of the page regarding from what device*/
+    height: 10vh; /*height of the navbar will adjust according to the screen height, making it responsive*/
+    display: flex; /*allows elements inside a container (like the navbar) to be arranged flexibly. It makes it easier to align and distribute items inside the navbar*/
+    align-items: center;/*content inside the navbar is vertically centered along the container'*/
+    padding-left: 2vw; /*padding is used on both sides for spacing. we used vw since the width is going to change in diff viewports*/
+    padding-right: 2vw; /*ensure that the content inside the navbar doesn’t touch the edges of the screen*/
+    justify-content: space-between; /*first element will align to the left, and the last element will align to the right, with the remaining elements spaced evenly*/
+    position: fixed; /*this fixes the navbar in place relative to the browser window, meaning it will stay at the same spot on the screen even when the user scrolls the page*/
+    top: 0; /*navbar is positioned at the very top of the screen, starting from 0 px from the top edge of the viewport*/
+    z-index: 1000; /*it controls the stacking order of elements. Elements with a higher z-index appear in front of elements with a lower z-index. Making the navbar that has 1000 z-index on top of the other content on the page, regarding if you scroll*/
 }
 
 .primary-color {
-    color: var(--primary-color); 
+    color: var(--primary-color); /*using the green color for all the text in the class primary-color in html*/
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 5vh;
-    color: var(--primary-color);
+    font-weight: bold; /*make text bold*/
+    font-size: 5vh; /*5 viewport height, means the hight of the text will changes depending on the device*/
+    color: var(--primary-color); /*make logos color green*/
 }
 
 .name {
-    font-weight: normal;
+    font-weight: normal; /*keep text normal not bolded*/
 }
 
 .nav-button {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    display: flex; /*make them align and space easily like in a row*/
+    justify-content: space-between; /*equal space distributed between elements*/
+    gap: 30px; /*gap of 30px will be applied between each of the items. It provides a consistent space between the buttons*/
 }
 
 .nav-button a {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: transparent; /*the buttons are transparent taking the color of the navbar*/
+    border-color: transparent; /*creat a border but keep transparent*/
     font-size: 2.5vh;
-    border-radius: 10px;
-    color: white;
+    border-radius: 10px; /*the curve of the edges are 10px*/
+    color: white; /*text color is white*/
     transition: background-color 0.2s ease-in;
-    padding-left: 5px;
+    padding-left: 5px; /*the space on the left and right of the text from the border*/
     padding-right: 5px;
-    text-decoration: none;
+    text-decoration: none; /*to get rid of the underline that are under the links*/
 }
 
 .nav-button a:hover {
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color); /*when touching the buttons the backgrout will change to green while the border stays white bc its transparent to the navbar background*/
 }
 
 main {
-    padding-top: 10vh;
-    min-height: 100vh; 
+    padding-top: 10vh; /*home page starts after 10 veiwport heigh from the webpage. useful since I have a navbar and I dont want the content to overlap*/
+    min-height: 100vh; /*it ensures that the content spans the full height of the screen, even if there is not enough content to fill it naturally*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*sets the direction of the flex container’s main axis to column, meaning that child elements inside the main element will be stacked vertically (from top to bottom) instead of the default horizontal row*/
 }
 
 .main-div {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+    display: flex; /*allows for flexible and dynamic alignment and spacing of its child elements*/
+    flex-direction: column; /*changes the default horizontal layout of Flexbox to a vertical layout make the text from top to bottom*/
+    align-items: flex-start; /*child elements will be aligned to the left side of the container (the starting point for a row). the reason why I did not use flex-direction for it because it will make it align in the horizontal axis*/
     background-color: rgb(68, 68, 68);
     font-size: 4vw;
     font-weight: bold;
-    height: 100%;
-    padding: 12vh;
+    height: 100%; /*take up the full height of its parent container, ensuring it stretches across the entire height of the viewport*/
+    padding: 12vh; /*the 12% viewport height padding around the content, provides space between the text and the container’s edge*/
 }
 
 .main-div a {
@@ -102,17 +102,17 @@ main {
     border-radius: 10px;
     color: white;
     font-size: 2vw;
-    font-weight: normal;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in;
+    font-weight: normal; /*not bold*/
+    text-decoration: none; /*no line under projects*/
+    transition: background-color 0.2s ease-in; /*background color will slowly change over 0.2 seconds when clicking on button*/
 }
 
 .main-div a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
 }
 
 .primary {
-    color: var(--primary-color); 
+    color: var(--primary-color); /*make Tala Bashanfar green*/
 }
 
 .text-white {
@@ -120,7 +120,7 @@ main {
 }
 
 section {
-    padding: 50px;
+    padding: 50px; /*padding 50px from all directions*/
     background-color: #fff;
     font-size: 2vw;
     text-align: center;
@@ -137,10 +137,10 @@ section {
 }
 
 .section-one img {
-    width: 30%; 
-    height: auto; 
+    width: 30%; /*sets the width of the image to 30% of its containing element, it take the 30% of the devices screen it displays at*/
+    height: auto; /*maintain the original proportions of the image*/
     border-radius: 20px; 
-    padding-top: 1vh;
+    padding-top: 1vh;/*vh because the padding(top and bottoms) won't be affected vertically but horizontally in different viewports*/
     padding-bottom: 1vh;
 }
 
@@ -154,15 +154,15 @@ section {
 }
 
 .section-two-span {
-    width: 100%;
-    text-align: start;
+    width: 100%; /*sets the width of the element to 100% of its parent container*/
+    text-align: start; /*start from the left side of the container(left to right)*/
 }
 
 #contact .contact {
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
+    max-width: 1200px; /*the container will not grow wider than 1200px, even on large screens*/
+    margin: 0 auto; /*top and bottom margins are set to 0 (no vertical space), while the left and right margins are set to auto, which will center the element horizontally*/
+    width: 90%; /*sets the width of the .contact container to 90% of the viewport width*/
 }
 #contact .contactItems {
     width: 100%;
@@ -192,10 +192,10 @@ textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*total width of the input/textarea includes both the padding and border*/
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: vertical;/*resize the textarea vertically (up or down)*/
 }
 #contact
     .contactItems
@@ -215,7 +215,7 @@ textarea {
     border: 2px solid rgb(142, 199, 183);
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem; /*extra spacing between each letter in the button text, with the spacing set to 0.1 rem (relative to the root font size)*/
     margin-top: 5px;
     transition: 0.3s ease;
     transition-property: background-color, color;
@@ -280,7 +280,7 @@ form button {
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /*changes the cursor to a pointer (usually a hand icon) when the user hovers over the button*/
     margin: 10px;
     position: relative;
     left: 0
