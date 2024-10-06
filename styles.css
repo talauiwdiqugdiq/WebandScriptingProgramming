@@ -405,7 +405,7 @@ form p {
 @media (max-width: 768px) {
     #footer h2, 
     #footer p {
-        font-size: 1.5rem; 
+        font-size: 1rem; 
     }
 
     form {
