@@ -435,4 +435,9 @@ form p {
         font-size: 3vw; 
         padding: 5px 10px; /*smaller padding for better fit*/
     }
+    
+    .dropdown-content a {
+        font-size: 1.2vh; /* Reduce the size of the dropdown menu text */
+    }
 }
+
