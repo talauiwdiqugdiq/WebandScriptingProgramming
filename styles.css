@@ -437,7 +437,7 @@ form p {
     }
     
     .dropdown-content a {
-        font-size: 1.2vh; /* Reduce the size of the dropdown menu text */
+        font-size: 1vh; /* Reduce the size of the dropdown menu text */
     }
 }
 
